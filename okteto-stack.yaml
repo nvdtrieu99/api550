@@ -10,16 +10,7 @@ services:
     resources:
       cpu: 100m
       memory: 128Mi
-  tensorflow:
-    public: true
-    image: okteto.dev/api550:latest
-    build: .
-    replicas: 1
-    ports:
-      - 80
-    resources:
-      cpu: 100m
-      memory: 128Mi
+
 
 
 

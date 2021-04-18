@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Body
 from fastapi.encoders import jsonable_encoder
-
+from tensorflow.python.platform import gfile
 # import numpy as np
 # from PIL import Image, ExifTags
 # import cv2
@@ -13,7 +13,7 @@ async def get_root() -> dict:
         "message": "Welcome to your Okteto app."
     }
 
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
 @app.get("/hihi")
 async def get_root():
     return {
