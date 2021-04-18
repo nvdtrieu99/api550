@@ -8,7 +8,7 @@ ADD okteto-stack.yaml /okteto-stack.yaml
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 80
 
 COPY ./app /app
 
